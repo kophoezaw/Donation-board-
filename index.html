@@ -162,7 +162,7 @@
 
     <!-- First Tab Content -->
     <div id="firstTab" class="tab-content active">
-        <table>
+        <table id="table1">
             <thead>
                 <tr>
                     <th class="text-center" style="width: 10%;">စဉ်</th>
@@ -171,67 +171,69 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td class="text-center">1</td><td>ကျေးဇူးရှင်အောင်လံဆရာတော်ဘုရားကြီးအားအမှူးထား၍ ဦး အရိယာဝံသဒုလ္လဘရဟန်း</td><td class="text-right">300,000</td></tr>
-                <tr><td class="text-center">2</td><td>မိခင်ကြီးဒေါ်တင်တင်အေးအားအမှူးထား၍ မမြတ်မြတ်ရွှေရည်မိသားစု</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">3</td><td>ဦးစန်းလှိုင်+ဒေါ်ရွှေဖြူနွယ် စွယ်တော်မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">4</td><td>Dr ဇော်မင်းလတ် + ဒေါ်သူဇာထွန်း မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">5</td><td>ဦးရွှေကို+ဒေါ်သီတာဝင်း</td><td class="text-right">500,000</td></tr>
-                <tr><td class="text-center">6</td><td>မနှင်းလဲ့ထွန်းမိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">7</td><td>(ဦးစိန်လှိုင်+ဒေါ်ကျင်မှုံ) အားရည်စူး၍ ဒေါ်သီသီလှိုင်မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">8</td><td>ဦးအာနိုး+မဖူးဖူးမိသားစု</td><td class="text-right">300,000</td></tr>
-                <tr><td class="text-center">9</td><td>ဦးအောင်ဆန်းဝင်း+ဒေါ်စန်းယုမော် သားနေမင်းကို ညီလမင်း ကြယ်မင်းမြတ်</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">10</td><td>ဦးသန်းဇော်+Dr ခင်ပြုံးရီ မိသားစု</td><td class="text-right">500,000</td></tr>
-                <tr><td class="text-center">11</td><td>မမာမာဇင် မိသားစု</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">12</td><td>ကိုဖြိုးဝေအောင်+မခင်နှင်းဆီမိသားစု</td><td class="text-right">200,000</td></tr>
-                <tr><td class="text-center">13</td><td>ဦးအုန်းစိုး+ဒေါ်စိုးစိုးမိသားစု</td><td class="text-right">30,000</td></tr>
-                <tr><td class="text-center">14</td><td>ကိုဝင်းကို+ဒေါ်ဝါဝါခိုင် မိသားစု</td><td class="text-right">30,000</td></tr>
-                <tr><td class="text-center">15</td><td>ယောဂီ ၃၀၅၁ ဒေါ်ငြိမ်းငြိမ်းအေး မိသားစု</td><td class="text-right">5,000</td></tr>
-                <tr><td class="text-center">16</td><td>ဒေါ်တိုးရင်မိသားစု</td><td class="text-right">10,000</td></tr>
-                <tr><td class="text-center">17</td><td>မိခင်ကြီးဒေါ်ထွေးအားအမှူးထား၍ ဒေါ်မို့မို့၊ ဒေါ်လှဦးမိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">18</td><td>မအင်ကြင်းလှမြင့် မိသားစု</td><td class="text-right">500,000</td></tr>
-                <tr><td class="text-center">19</td><td>1B Ag Myat Thu+3B558MM Aye Aye Mon</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">20</td><td>ဦးမောင်မောင်ဟန်+ဒေါ်လွင်လွင်မာ(သမီး)မအိမွန်ဟန်မိသားစု</td><td class="text-right">30,000</td></tr>
-                <tr><td class="text-center">21</td><td>ဖခင်ဖြစ်သူ ဦးကြည်လွင်အား ရည်စူး၍ ကျန်ရစ်သူမိသားစုကောင်းမှု သရက်မြို့</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">22</td><td>မိခင်ကြီးဒေါ်သန်း အမှူးထား၍ သမီးမစိန်စိန်</td><td class="text-right">200,000</td></tr>
-                <tr><td class="text-center">23</td><td>ဒေါ်နုနုခိုင်နှင့်သမီးမကျော့ကျော့ခိုင်&မစိုးမြသီ မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">24</td><td>ဒေါ်တင်နှင့်သမီး မသီတာအောင် မိသားစု</td><td class="text-right">30,000</td></tr>
-                <tr><td class="text-center">25</td><td>ဦးဇော်လင်း+ ဒေါ်အိအိလွင် သား မောင်ကောင်းခန့် သမီး မယွန်းရွှေရည်လင်းမိသားစု ကောင်းမှု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">26</td><td>မမီမီဇင် မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">27</td><td>မသိမ့်သဥ္ဇာစိုး</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">28</td><td>ကိုအောင်မြတ်သူ+မအေးအေးမွန် ဒုတိယကြိမ်ထပ်တိုးလှူ</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">29</td><td>ဒေါ်နုနုခိုင်, မကျော့ ဒုတိယကြိမ်ထပ်တိုးလှူ</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">30</td><td>ဒေါ်ဌေးဌေးဝင်း</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">31</td><td>ဦးသန်းဇော်ဦး+မမြင့်ကေခိုင်မိသားစု</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">32</td><td>မနန်းသီရိဦး မြင်းခြံမြို့</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">33</td><td>SNF ယောဂီ 3 B 0694 Daw Phyo Phyo Swe</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">34</td><td>ဦးသန့်ဇော်လင်း+ဒေါ်ဝေမာဦး မိသားစု</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">35</td><td>ဦးတင်မြင့် ကောင်းမှု</td><td class="text-right">10,000</td></tr>
-                <tr><td class="text-center">36</td><td>မရည်မွန်အောင် မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">37</td><td>မချို သင်္ဃန်းကျွန်း</td><td class="text-right">30,000</td></tr>
-                <tr><td class="text-center">38</td><td>ဒေါ်ကြည်ကြည်အေး ဥက္ကံမြို့</td><td class="text-right">200,000</td></tr>
-                <tr><td class="text-center">39</td><td>ဦးမျိုးအောင် +ဒေါ်ခိုင်ခိုင်ဝင်း ။သမီးများ မသင်းနန္ဒာစိုး၊မချမ်းအိမ်စည် မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">40</td><td>ဖခင်ကြီးဦးဝင်းမြင့်ကိုရည်စူး၍ ဒေါ်ကြည်ကြည်နိုင်မိသားစု</td><td class="text-right">300,000</td></tr>
-                <tr><td class="text-center">41</td><td>ကိုထွန်းဝေ+မမေလွင်သော် ထွန်းပြည့်လျှံဆောက်လုပ်ရေးမိသားစု</td><td class="text-right">200,000</td></tr>
-                <tr><td class="text-center">42</td><td>YG3067 ဒေါ်သန်းသန်းညို</td><td class="text-right">30,000</td></tr>
-                <tr><td class="text-center">43</td><td>YG3078 မစုလှိုင်နှင်း</td><td class="text-right">120,000</td></tr>
-                <tr><td class="text-center">44</td><td>ဦးတင်အေး အားရည်စူး၍ ဒေါ်ကြင်ထွေးမိသားစု ဖြူးမြို့</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">45</td><td>ဦးသိန်းဟန်+ဒေါ်မြဝင်း သမီးသီတာဝင်း,ဖြူဖြူဝင်း သားစည်သူအောင် မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">46</td><td>ဒေါ်နန်းသန်းအေး မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">47</td><td>ဒေါ်ဆွေဆွေမြင့် မိသားစု</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">48</td><td>ကွယ်လွန်သူမိဘများအားရည်စူး၍ ဒေါ်ဌေးဌေးဦး၊ ဒေါ်ခင်မြင်ဌေး၊ ဒေါ်ခင်စန်းမိုး၊ မကေဇင်လဲ့၊ မဆုလင်းစံ မိသားစု</td><td class="text-right">500,000</td></tr>
-                <tr><td class="text-center">49</td><td>ဦးအောင်မြင့် အား ရည်စူး၍ ဒေါ်ခင်ခင်စု မိသားစု (စမ်းချောင်းမြို့နယ်)</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">50</td><td>မဝေမွန်သက် မိသားစု</td><td class="text-right">100,000</td></tr>
-                <tr class="total-row">
-                    <td colspan="2" class="text-center">ပထမအကြိမ် စုစုပေါင်း (၅၀ ဦး)</td>
-                    <td class="text-right">၆,၄၇၅,၀၀၀ ကျပ်</td>
-                </tr>
+                <tr><td></td><td>ကျေးဇူးရှင်အောင်လံဆရာတော်ဘုရားကြီးအားအမှူးထား၍ ဦး အရိယာဝံသဒုလ္လဘရဟန်း</td><td class="text-right">300000</td></tr>
+                <tr><td></td><td>မိခင်ကြီးဒေါ်တင်တင်အေးအားအမှူးထား၍ မမြတ်မြတ်ရွှေရည်မိသားစု</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>ဦးစန်းလှိုင်+ဒေါ်ရွှေဖြူနွယ် စွယ်တော်မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>Dr ဇော်မင်းလတ် + ဒေါ်သူဇာထွန်း မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဦးရွှေကို+ဒေါ်သီတာဝင်း</td><td class="text-right">500000</td></tr>
+                <tr><td></td><td>မနှင်းလဲ့ထွန်းမိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>(ဦးစိန်လှိုင်+ဒေါ်ကျင်မှုံ) အားရည်စူး၍ ဒေါ်သီသီလှိုင်မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဦးအာနိုး+မဖူးဖူးမိသားစု</td><td class="text-right">300000</td></tr>
+                <tr><td></td><td>ဦးအောင်ဆန်းဝင်း+ဒေါ်စန်းယုမော် သားနေမင်းကို ညီလမင်း ကြယ်မင်းမြတ်</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဦးသန်းဇော်+Dr ခင်ပြုံးရီ မိသားစု</td><td class="text-right">500000</td></tr>
+                <tr><td></td><td>မမာမာဇင် မိသားစု</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>ကိုဖြိုးဝေအောင်+မခင်နှင်းဆီမိသားစု</td><td class="text-right">200000</td></tr>
+                <tr><td></td><td>ဦးအုန်းစိုး+ဒေါ်စိုးစိုးမိသားစု</td><td class="text-right">30000</td></tr>
+                <tr><td></td><td>ကိုဝင်းကို+ဒေါ်ဝါဝါခိုင် မိသားစု</td><td class="text-right">30000</td></tr>
+                <tr><td></td><td>ယောဂီ ၃၀၅၁ ဒေါ်ငြိမ်းငြိမ်းအေး မိသားစု</td><td class="text-right">5000</td></tr>
+                <tr><td></td><td>ဒေါ်တိုးရင်မိသားစု</td><td class="text-right">10000</td></tr>
+                <tr><td></td><td>မိခင်ကြီးဒေါ်ထွေးအားအမှူးထား၍ ဒေါ်မို့မို့၊ ဒေါ်လှဦးမိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>မအင်ကြင်းလှမြင့် မိသားစု</td><td class="text-right">500000</td></tr>
+                <tr><td></td><td>1B Ag Myat Thu+3B558MM Aye Aye Mon</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဦးမောင်မောင်ဟန်+ဒေါ်လွင်လွင်မာ(သမီး)မအိမွန်ဟန်မိသားစု</td><td class="text-right">30000</td></tr>
+                <tr><td></td><td>ဖခင်ဖြစ်သူ ဦးကြည်လွင်အား ရည်စူး၍ ကျန်ရစ်သူမိသားစုကောင်းမှု သရက်မြို့</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>မိခင်ကြီးဒေါ်သန်း အမှူးထား၍ သမီးမစိန်စိန်</td><td class="text-right">200000</td></tr>
+                <tr><td></td><td>ဒေါ်နုနုခိုင်နှင့်သမီးမကျော့ကျော့ခိုင်&မစိုးမြသီ မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဒေါ်တင်နှင့်သမီး မသီတာအောင် မိသားစု</td><td class="text-right">30000</td></tr>
+                <tr><td></td><td>ဦးဇော်လင်း+ ဒေါ်အိအိလွင် သား မောင်ကောင်းခန့် သမီး မယွန်းရွှေရည်လင်းမိသားစု ကောင်းမှု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>မမီမီဇင် မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>မသိမ့်သဥ္ဇာစိုး</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ကိုအောင်မြတ်သူ+မအေးအေးမွန် ဒုတိယကြိမ်ထပ်တိုးလှူ</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဒေါ်နုနုခိုင်, မကျော့ ဒုတိယကြိမ်ထပ်တိုးလှူ</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>ဒေါ်ဌေးဌေးဝင်း</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>ဦးသန်းဇော်ဦး+မမြင့်ကေခိုင်မိသားစု</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>မနန်းသီရိဦး မြင်းခြံမြို့</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>SNF ယောဂီ 3 B 0694 Daw Phyo Phyo Swe</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>ဦးသန့်ဇော်လင်း+ဒေါ်ဝေမာဦး မိသားစု</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>ဦးတင်မြင့် ကောင်းမှု</td><td class="text-right">10000</td></tr>
+                <tr><td></td><td>မရည်မွန်အောင် မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>မချို သင်္ဃန်းကျွန်း</td><td class="text-right">30000</td></tr>
+                <tr><td></td><td>ဒေါ်ကြည်ကြည်အေး ဥက္ကံမြို့</td><td class="text-right">200000</td></tr>
+                <tr><td></td><td>ဦးမျိုးအောင် +ဒေါ်ခိုင်ခိုင်ဝင်း ။သမီးများ မသင်းနန္ဒာစိုး၊မချမ်းအိမ်စည် မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဖခင်ကြီးဦးဝင်းမြင့်ကိုရည်စူး၍ ဒေါ်ကြည်ကြည်နိုင်မိသားစု</td><td class="text-right">300000</td></tr>
+                <tr><td></td><td>ကိုထွန်းဝေ+မမေလွင်သော် ထွန်းပြည့်လျှံဆောက်လုပ်ရေးမိသားစု</td><td class="text-right">200000</td></tr>
+                <tr><td></td><td>YG3067 ဒေါ်သန်းသန်းညို</td><td class="text-right">30000</td></tr>
+                <tr><td></td><td>YG3078 မစုလှိုင်နှင်း</td><td class="text-right">120000</td></tr>
+                <tr><td></td><td>ဦးတင်အေး အားရည်စူး၍ ဒေါ်ကြင်ထွေးမိသားစု ဖြူးမြို့</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဦးသိန်းဟန်+ဒေါ်မြဝင်း သမီးသီတာဝင်း,ဖြူဖြူဝင်း သားစည်သူအောင် မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဒေါ်နန်းသန်းအေး မိသားစု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဒေါ်ဆွေဆွေမြင့် မိသားစု</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>ကွယ်လွန်သူမိဘများအားရည်စူး၍ ဒေါ်ဌေးဌေးဦး၊ ဒေါ်ခင်မြင်ဌေး၊ ဒေါ်ခင်စန်းမိုး၊ မကေဇင်လဲ့၊ မဆုလင်းစံ မိသားစု</td><td class="text-right">500000</td></tr>
+                <tr><td></td><td>ဦးအောင်မြင့် အား ရည်စူး၍ ဒေါ်ခင်ခင်စု မိသားစု (စမ်းချောင်းမြို့နယ်)</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>မဝေမွန်သက် မိသားစု</td><td class="text-right">100000</td></tr>
             </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td colspan="2" class="text-center">ပထမအကြိမ် စုစုပေါင်း (<span id="count1">0</span> ဦး)</td>
+                    <td class="text-right" id="sum1">0 ကျပ်</td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 
     <!-- Second Tab Content -->
     <div id="secondTab" class="tab-content">
-        <table>
+        <table id="table2">
             <thead>
                 <tr>
                     <th class="text-center" style="width: 10%;">စဉ်</th>
@@ -240,22 +242,25 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td class="text-center">1</td><td>မိခင်ဒေါ်အေးအေးသန်းနှင့်ဖခင် ဦးကိုကိုကြီးတို့အား ရည်စူး၍သမီးကေသီဦး ကောင်းမှု</td><td class="text-right">100,000</td></tr>
-                <tr><td class="text-center">2</td><td>ဦးသန်းစိန် + ဒေါ်သန်းသန်းအေး မိသားစု</td><td class="text-right">300,000</td></tr>
-                <tr><td class="text-center">3</td><td>မမြတ်စုမွန်၊ မအေးအေးသော် မိသားစု</td><td class="text-right">200,000</td></tr>
-                <tr><td class="text-center">4</td><td>နှစ်ဖက်မိဘများအား အမှူးထား၍ ကိုလွင်ရဲအောင် + မသဇင်၊ သမီး Aurora Lwin မိသားစု</td><td class="text-right">10,000</td></tr>
-                <tr><td class="text-center">5</td><td>ဦးတင်မျိုးလင်းထွန်း၊ ဒေါ်နွယ်နီအေး မိသားစု လမ်းအလှူ</td><td class="text-right">400,000</td></tr>
-                <tr><td class="text-center">6</td><td>ဦးမောင်မောင်ဟန် + ဒေါ်လွင်လွင်မာ (သမီး) မအိမွန်ဟန် မိသားစု</td><td class="text-right">18,000</td></tr>
-                <tr><td class="text-center">7</td><td>မနှင်းနှင်းအောင် မိသားစု</td><td class="text-right">50,000</td></tr>
-                <tr><td class="text-center">8</td><td>(ဦးအောင်ဆန်းဝင်း) + ဒေါ်စန်းယုမော်၊ သား-နေမင်းကို၊ ညီလမင်း၊ ကြယ်မင်းမြတ် မိသားစု</td><td class="text-right">30,000</td></tr>
-                <tr><td class="text-center">9</td><td>ဦးသန်းဌေးအောင် + ဒေါ်နွယ်နွယ်မြင့် (သား - မောင်ရန်ပိုင်အောင်၊ သမီး - မဆုလဲ့ရည်ထွန်း) နိုင်လွန်ကတ္တရာ လမ်းခင်းအလှူတော်ငွေ</td><td class="text-right">30,000</td></tr>
-                <tr><td class="text-center">10</td><td>မိခင်ကြီး ဒေါ်ကျင်လှိုင် ကွယ်လွန်ခြင်း (၆) နှစ်ပြည့်အားရည်စူး၍ ဦးလူထွန်း (3BYG0757) မိသားစု (ဈေးလမ်း သာယာဝတီမြို့နယ် သုံးဆယ်မြို့)</td><td class="text-right">10,000</td></tr>
-                <tr><td class="text-center">11</td><td>ဦးတိုင်းညွန့် + ဒေါ်မြင့်မြင့်စန်း မိသားစု</td><td class="text-right">10,000</td></tr>
-                <tr class="total-row">
-                    <td colspan="2" class="text-center">ဒုတိယအကြိမ် စုစုပေါင်း (၁၁ ဦး)</td>
-                    <td class="text-right">၁,၂၁၈,၀၀၀ ကျပ်</td>
-                </tr>
+                <!-- အလှူရှင်အသစ်ထည့်လိုပါက အောက်ပါအတိုင်း <tr>...</tr> ဖြင့် ဆက်ထည့်နိုင်ပါသည် -->
+                <tr><td></td><td>မိခင်ဒေါ်အေးအေးသန်းနှင့်ဖခင် ဦးကိုကိုကြီးတို့အား ရည်စူး၍သမီးကေသီဦး ကောင်းမှု</td><td class="text-right">100000</td></tr>
+                <tr><td></td><td>ဦးသန်းစိန် + ဒေါ်သန်းသန်းအေး မိသားစု</td><td class="text-right">300000</td></tr>
+                <tr><td></td><td>မမြတ်စုမွန်၊ မအေးအေးသော် မိသားစု</td><td class="text-right">200000</td></tr>
+                <tr><td></td><td>နှစ်ဖက်မိဘများအား အမှူးထား၍ ကိုလွင်ရဲအောင် + မသဇင်၊ သမီး Aurora Lwin မိသားစု</td><td class="text-right">10000</td></tr>
+                <tr><td></td><td>ဦးတင်မျိုးလင်းထွန်း၊ ဒေါ်နွယ်နီအေး မိသားစု လမ်းအလှူ</td><td class="text-right">400000</td></tr>
+                <tr><td></td><td>ဦးမောင်မောင်ဟန် + ဒေါ်လွင်လွင်မာ (သမီး) မအိမွန်ဟန် မိသားစု</td><td class="text-right">18000</td></tr>
+                <tr><td></td><td>မနှင်းနှင်းအောင် မိသားစု</td><td class="text-right">50000</td></tr>
+                <tr><td></td><td>(ဦးအောင်ဆန်းဝင်း) + ဒေါ်စန်းယုမော်၊ သား-နေမင်းကို၊ ညီလမင်း၊ ကြယ်မင်းမြတ် မိသားစု</td><td class="text-right">30000</td></tr>
+                <tr><td></td><td>ဦးသန်းဌေးအောင် + ဒေါ်နွယ်နွယ်မြင့် (သား - မောင်ရန်ပိုင်အောင်၊ သမီး - မဆုလဲ့ရည်ထွန်း) နိုင်လွန်ကတ္တရာ လမ်းခင်းအလှူတော်ငွေ</td><td class="text-right">30000</td></tr>
+                <tr><td></td><td>မိခင်ကြီး ဒေါ်ကျင်လှိုင် ကွယ်လွန်ခြင်း (၆) နှစ်ပြည့်အားရည်စူး၍ ဦးလူထွန်း (3BYG0757) မိသားစု (ဈေးလမ်း သာယာဝတီမြို့နယ် သုံးဆယ်မြို့)</td><td class="text-right">10000</td></tr>
+                <tr><td></td><td>ဦးတိုင်းညွန့် + ဒေါ်မြင့်မြင့်စန်း မိသားစု</td><td class="text-right">10000</td></tr>
             </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td colspan="2" class="text-center">ဒုတိယအကြိမ် စုစုပေါင်း (<span id="count2">0</span> ဦး)</td>
+                    <td class="text-right" id="sum2">0 ကျပ်</td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 
@@ -279,6 +284,39 @@
         document.getElementById(tabName).classList.add("active");
         evt.currentTarget.classList.add("active");
     }
+
+    // Auto calculate index, count, and sum
+    function processTable(tableId, countId, sumId) {
+        const table = document.getElementById(tableId);
+        if (!table) return;
+        const rows = table.querySelectorAll("tbody tr");
+        let totalSum = 0;
+        
+        rows.forEach((row, index) => {
+            const cells = row.querySelectorAll("td");
+            if (cells.length >= 3) {
+                // Set serial number automatically
+                cells[0].className = "text-center";
+                cells[0].textContent = index + 1;
+                
+                // Parse amount
+                const amtText = cells[2].textContent.replace(/[^0-9]/g, "");
+                const amt = parseInt(amtText) || 0;
+                totalSum += amt;
+                
+                // Format amount with commas
+                cells[2].textContent = amt.toLocaleString() + " ကျပ်";
+            }
+        });
+
+        document.getElementById(countId).textContent = rows.length;
+        document.getElementById(sumId).textContent = totalSum.toLocaleString() + " ကျပ်";
+    }
+
+    window.onload = function() {
+        processTable("table1", "count1", "sum1");
+        processTable("table2", "count2", "sum2");
+    };
 </script>
 
 </body>
