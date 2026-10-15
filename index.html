@@ -3,548 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNF YGN သာသနာပြုအဖွဲ့ - လျှပ်စစ်ယာဉ်ငယ်အလှူတော်မှတ်တမ်း</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts for Myanmar Text -->
-    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&family=Noto+Sans+Myanmar:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>နိုင်လွန်ကတ္တရာ လမ်းခင်း အလှူတော်စာရင်း</title>
     <style>
+        :root {
+            --primary: #1b5e20;
+            --primary-light: #e8f5e9;
+            --accent: #d4af37;
+            --text: #2c3e50;
+            --bg: #f4f6f8;
+            --card-bg: #ffffff;
+        }
+
         body {
-            font-family: 'Noto Sans Myanmar', 'Padauk', sans-serif;
-            background-color: #fcfbf7;
+            font-family: sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
         }
-        .custom-scrollbar::-webkit-scrollbar {
-            height: 6px;
-            width: 6px;
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
+
+        .header {
+            text-align: center;
+            border-bottom: 3px double var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
         }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #d97706;
-            border-radius: 4px;
+
+        .header h1 {
+            color: var(--primary);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #555;
+            font-size: 16px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        /* Tab Buttons Styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .tab-btn {
+            background-color: #e0e0e0;
+            color: var(--text);
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            background-color: #bdbdbd;
+        }
+
+        .tab-btn.active {
+            background-color: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 4px 10px rgba(27, 94, 32, 0.3);
+        }
+
+        /* Tab Content Styling */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f8e9;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .total-row {
+            background-color: var(--primary-light) !important;
+            font-weight: bold;
+            font-size: 15px;
+            color: var(--primary);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            color: var(--primary);
+            font-size: 16px;
+            font-weight: bold;
         }
     </style>
 </head>
-<body class="text-gray-800 min-h-screen flex flex-col justify-between selection:bg-amber-200 overflow-x-hidden">
+<body>
 
-    <!-- Header Banner -->
-    <header class="bg-amber-950 text-amber-100 py-3 px-4 text-center shadow-md border-b border-amber-800/50">
-        <span class="flex items-center justify-center space-x-2 font-medium text-xs sm:text-sm text-amber-200">
-            <span>🙏</span>
-            <span>သာသနာ့ပျိုးဥယျာဉ်ကျောင်း လျှပ်စစ်ယာဉ်ငယ်အလှူတော်မှတ်တမ်း</span>
-        </span>
-    </header>
+<div class="container">
 
-    <!-- Main Content Container -->
-    <main class="max-w-4xl mx-auto w-full px-3 sm:px-6 py-4 sm:py-6 flex-grow space-y-4 sm:space-y-6">
+    <div class="header">
+        <h1>🙏🌹🌺🌷 နိုင်လွန်ကတ္တရာ လမ်းခင်း အလှူတော် 🌹🌺🌷🙏</h1>
+        <p>ကုန်းတလဘောင် တိုက်ခွဲ ( ၃၂ ) ရိပ်သာအတွင်း လမ်းခင်းရန် အလှူငွေများ</p>
+    </div>
 
-        <!-- Title Banner with Logo & Subtitle -->
-        <section class="bg-gradient-to-br from-amber-700 via-amber-800 to-amber-900 text-white rounded-2xl p-4 sm:p-8 text-center shadow-lg border border-amber-600/30 relative overflow-hidden flex flex-col items-center justify-center">
-            <div class="absolute inset-0 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] opacity-10 pointer-events-none"></div>
-            
-            <!-- Logo Top Center -->
-            <div class="mb-3 relative z-10">
-                <img src="https://i.ibb.co/tM2DZwY3/snf-ygn-new-logo.png" alt="SNF YGN Logo" class="h-14 w-auto sm:h-20 object-contain drop-shadow-md mx-auto">
-            </div>
+    <!-- Tab Buttons -->
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab(event, 'firstTab')">ပထမအကြိမ် အလှူစာရင်း</button>
+        <button class="tab-btn" onclick="switchTab(event, 'secondTab')">ဒုတိယအကြိမ် အလှူစာရင်း</button>
+    </div>
 
-            <h1 class="text-xl sm:text-3xl md:text-4xl font-bold tracking-wide text-amber-100 mb-2 drop-shadow relative z-10">
-                " SNF YGN သာသနာပြုအဖွဲ့ "
-            </h1>
-            
-            <div class="h-0.5 w-24 sm:w-28 bg-amber-400/60 mx-auto my-2 sm:my-3 rounded-full relative z-10"></div>
-            
-            <!-- Flexible Subtitle Text -->
-            <h2 class="text-xs sm:text-base md:text-lg font-medium text-amber-200 relative z-10 leading-relaxed px-2">
-                တရားထောက်များနှင့် ယောဂီများ စုပေါင်းကောင်းမှု
-            </h2>
-            <p class="text-xs sm:text-sm md:text-base font-semibold text-amber-300 relative z-10 mt-1">
-                နတ်လူသာဓု ခေါ်စေသော်
-            </p>
-        </section>
+    <!-- First Tab Content -->
+    <div id="firstTab" class="tab-content active">
+        <table>
+            <thead>
+                <tr>
+                    <th class="text-center" style="width: 10%;">စဉ်</th>
+                    <th style="width: 65%;">အလှူရှင် အမည် / အကြောင်းအရာ</th>
+                    <th class="text-right" style="width: 25%;">ငွေပမာဏ (ကျပ်)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="text-center">1</td><td>ကျေးဇူးရှင်အောင်လံဆရာတော်ဘုရားကြီးအားအမှူးထား၍ ဦး အရိယာဝံသဒုလ္လဘရဟန်း</td><td class="text-right">300,000</td></tr>
+                <tr><td class="text-center">2</td><td>မိခင်ကြီးဒေါ်တင်တင်အေးအားအမှူးထား၍ မမြတ်မြတ်ရွှေရည်မိသားစု</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">3</td><td>ဦးစန်းလှိုင်+ဒေါ်ရွှေဖြူနွယ် စွယ်တော်မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">4</td><td>Dr ဇော်မင်းလတ် + ဒေါ်သူဇာထွန်း မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">5</td><td>ဦးရွှေကို+ဒေါ်သီတာဝင်း</td><td class="text-right">500,000</td></tr>
+                <tr><td class="text-center">6</td><td>မနှင်းလဲ့ထွန်းမိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">7</td><td>(ဦးစိန်လှိုင်+ဒေါ်ကျင်မှုံ) အားရည်စူး၍ ဒေါ်သီသီလှိုင်မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">8</td><td>ဦးအာနိုး+မဖူးဖူးမိသားစု</td><td class="text-right">300,000</td></tr>
+                <tr><td class="text-center">9</td><td>ဦးအောင်ဆန်းဝင်း+ဒေါ်စန်းယုမော် သားနေမင်းကို ညီလမင်း ကြယ်မင်းမြတ်</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">10</td><td>ဦးသန်းဇော်+Dr ခင်ပြုံးရီ မိသားစု</td><td class="text-right">500,000</td></tr>
+                <tr><td class="text-center">11</td><td>မမာမာဇင် မိသားစု</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">12</td><td>ကိုဖြိုးဝေအောင်+မခင်နှင်းဆီမိသားစု</td><td class="text-right">200,000</td></tr>
+                <tr><td class="text-center">13</td><td>ဦးအုန်းစိုး+ဒေါ်စိုးစိုးမိသားစု</td><td class="text-right">30,000</td></tr>
+                <tr><td class="text-center">14</td><td>ကိုဝင်းကို+ဒေါ်ဝါဝါခိုင် မိသားစု</td><td class="text-right">30,000</td></tr>
+                <tr><td class="text-center">15</td><td>ယောဂီ ၃၀၅၁ ဒေါ်ငြိမ်းငြိမ်းအေး မိသားစု</td><td class="text-right">5,000</td></tr>
+                <tr><td class="text-center">16</td><td>ဒေါ်တိုးရင်မိသားစု</td><td class="text-right">10,000</td></tr>
+                <tr><td class="text-center">17</td><td>မိခင်ကြီးဒေါ်ထွေးအားအမှူးထား၍ ဒေါ်မို့မို့၊ ဒေါ်လှဦးမိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">18</td><td>မအင်ကြင်းလှမြင့် မိသားစု</td><td class="text-right">500,000</td></tr>
+                <tr><td class="text-center">19</td><td>1B Ag Myat Thu+3B558MM Aye Aye Mon</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">20</td><td>ဦးမောင်မောင်ဟန်+ဒေါ်လွင်လွင်မာ(သမီး)မအိမွန်ဟန်မိသားစု</td><td class="text-right">30,000</td></tr>
+                <tr><td class="text-center">21</td><td>ဖခင်ဖြစ်သူ ဦးကြည်လွင်အား ရည်စူး၍ ကျန်ရစ်သူမိသားစုကောင်းမှု သရက်မြို့</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">22</td><td>မိခင်ကြီးဒေါ်သန်း အမှူးထား၍ သမီးမစိန်စိန်</td><td class="text-right">200,000</td></tr>
+                <tr><td class="text-center">23</td><td>ဒေါ်နုနုခိုင်နှင့်သမီးမကျော့ကျော့ခိုင်&မစိုးမြသီ မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">24</td><td>ဒေါ်တင်နှင့်သမီး မသီတာအောင် မိသားစု</td><td class="text-right">30,000</td></tr>
+                <tr><td class="text-center">25</td><td>ဦးဇော်လင်း+ ဒေါ်အိအိလွင် သား မောင်ကောင်းခန့် သမီး မယွန်းရွှေရည်လင်းမိသားစု ကောင်းမှု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">26</td><td>မမီမီဇင် မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">27</td><td>မသိမ့်သဥ္ဇာစိုး</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">28</td><td>ကိုအောင်မြတ်သူ+မအေးအေးမွန် ဒုတိယကြိမ်ထပ်တိုးလှူ</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">29</td><td>ဒေါ်နုနုခိုင်, မကျော့ ဒုတိယကြိမ်ထပ်တိုးလှူ</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">30</td><td>ဒေါ်ဌေးဌေးဝင်း</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">31</td><td>ဦးသန်းဇော်ဦး+မမြင့်ကေခိုင်မိသားစု</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">32</td><td>မနန်းသီရိဦး မြင်းခြံမြို့</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">33</td><td>SNF ယောဂီ 3 B 0694 Daw Phyo Phyo Swe</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">34</td><td>ဦးသန့်ဇော်လင်း+ဒေါ်ဝေမာဦး မိသားစု</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">35</td><td>ဦးတင်မြင့် ကောင်းမှု</td><td class="text-right">10,000</td></tr>
+                <tr><td class="text-center">36</td><td>မရည်မွန်အောင် မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">37</td><td>မချို သင်္ဃန်းကျွန်း</td><td class="text-right">30,000</td></tr>
+                <tr><td class="text-center">38</td><td>ဒေါ်ကြည်ကြည်အေး ဥက္ကံမြို့</td><td class="text-right">200,000</td></tr>
+                <tr><td class="text-center">39</td><td>ဦးမျိုးအောင် +ဒေါ်ခိုင်ခိုင်ဝင်း ။သမီးများ မသင်းနန္ဒာစိုး၊မချမ်းအိမ်စည် မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">40</td><td>ဖခင်ကြီးဦးဝင်းမြင့်ကိုရည်စူး၍ ဒေါ်ကြည်ကြည်နိုင်မိသားစု</td><td class="text-right">300,000</td></tr>
+                <tr><td class="text-center">41</td><td>ကိုထွန်းဝေ+မမေလွင်သော် ထွန်းပြည့်လျှံဆောက်လုပ်ရေးမိသားစု</td><td class="text-right">200,000</td></tr>
+                <tr><td class="text-center">42</td><td>YG3067 ဒေါ်သန်းသန်းညို</td><td class="text-right">30,000</td></tr>
+                <tr><td class="text-center">43</td><td>YG3078 မစုလှိုင်နှင်း</td><td class="text-right">120,000</td></tr>
+                <tr><td class="text-center">44</td><td>ဦးတင်အေး အားရည်စူး၍ ဒေါ်ကြင်ထွေးမိသားစု ဖြူးမြို့</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">45</td><td>ဦးသိန်းဟန်+ဒေါ်မြဝင်း သမီးသီတာဝင်း,ဖြူဖြူဝင်း သားစည်သူအောင် မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">46</td><td>ဒေါ်နန်းသန်းအေး မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">47</td><td>ဒေါ်ဆွေဆွေမြင့် မိသားစု</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">48</td><td>ကွယ်လွန်သူမိဘများအားရည်စူး၍ ဒေါ်ဌေးဌေးဦး၊ ဒေါ်ခင်မြင်ဌေး၊ ဒေါ်ခင်စန်းမိုး၊ မကေဇင်လဲ့၊ မဆုလင်းစံ မိသားစု</td><td class="text-right">500,000</td></tr>
+                <tr><td class="text-center">49</td><td>ဦးအောင်မြင့် အား ရည်စူး၍ ဒေါ်ခင်ခင်စု မိသားစု (စမ်းချောင်းမြို့နယ်)</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">50</td><td>မဝေမွန်သက် မိသားစု</td><td class="text-right">100,000</td></tr>
+                <tr class="total-row">
+                    <td colspan="2" class="text-center">ပထမအကြိမ် စုစုပေါင်း (၅၀ ဦး)</td>
+                    <td class="text-right">၆,၄၇၅,၀၀၀ ကျပ်</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <!-- Intro Description Box -->
-        <section class="bg-amber-50/80 border-l-4 border-amber-600 rounded-r-2xl p-4 sm:p-6 shadow-sm border-y border-r border-amber-200/60">
-            <p class="text-xs sm:text-base md:text-lg text-amber-950 leading-relaxed text-center font-medium">
-                ရန်ကုန်တိုင်းဒေသကြီး လှည်းကူးမြို့နယ် သာသနာ့ပျိုးဥယျာဉ်ကျောင်း အတွက် လျှပ်စစ်ယာဉ်ငယ် လှူဒါန်းနိုင်ရန် ကုသိုလ်ပါဝင် လှူဒါန်းထားကြသော 
-                <span class="font-bold text-amber-800 bg-amber-100/80 px-1.5 py-0.5 rounded inline-block my-1">"အလှူရှင်များနှင့် အလှူငွေများအား"</span> 
-                ဝမ်းမြောက်ဝမ်းသာစွာဖြင့် သာဓုအနုမောဒနာ ခေါ်ဆိုနိုင်ကြပါစေခြင်း အကျိုးငှာ ရိုသေစွာဖြင့် မှတ်တမ်းတင် ဂုဏ်ပြုအပ်ပါသည်
-            </p>
-        </section>
+    <!-- Second Tab Content -->
+    <div id="secondTab" class="tab-content">
+        <table>
+            <thead>
+                <tr>
+                    <th class="text-center" style="width: 10%;">စဉ်</th>
+                    <th style="width: 65%;">အလှူရှင် အမည် / အကြောင်းအရာ</th>
+                    <th class="text-right" style="width: 25%;">ငွေပမာဏ (ကျပ်)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="text-center">1</td><td>မိခင်ဒေါ်အေးအေးသန်းနှင့်ဖခင် ဦးကိုကိုကြီးတို့အား ရည်စူး၍သမီးကေသီဦး ကောင်းမှု</td><td class="text-right">100,000</td></tr>
+                <tr><td class="text-center">2</td><td>ဦးသန်းစိန် + ဒေါ်သန်းသန်းအေး မိသားစု</td><td class="text-right">300,000</td></tr>
+                <tr><td class="text-center">3</td><td>မမြတ်စုမွန်၊ မအေးအေးသော် မိသားစု</td><td class="text-right">200,000</td></tr>
+                <tr><td class="text-center">4</td><td>နှစ်ဖက်မိဘများအား အမှူးထား၍ ကိုလွင်ရဲအောင် + မသဇင်၊ သမီး Aurora Lwin မိသားစု</td><td class="text-right">10,000</td></tr>
+                <tr><td class="text-center">5</td><td>ဦးတင်မျိုးလင်းထွန်း၊ ဒေါ်နွယ်နီအေး မိသားစု လမ်းအလှူ</td><td class="text-right">400,000</td></tr>
+                <tr><td class="text-center">6</td><td>ဦးမောင်မောင်ဟန် + ဒေါ်လွင်လွင်မာ (သမီး) မအိမွန်ဟန် မိသားစု</td><td class="text-right">18,000</td></tr>
+                <tr><td class="text-center">7</td><td>မနှင်းနှင်းအောင် မိသားစု</td><td class="text-right">50,000</td></tr>
+                <tr><td class="text-center">8</td><td>(ဦးအောင်ဆန်းဝင်း) + ဒေါ်စန်းယုမော်၊ သား-နေမင်းကို၊ ညီလမင်း၊ ကြယ်မင်းမြတ် မိသားစု</td><td class="text-right">30,000</td></tr>
+                <tr><td class="text-center">9</td><td>ဦးသန်းဌေးအောင် + ဒေါ်နွယ်နွယ်မြင့် (သား - မောင်ရန်ပိုင်အောင်၊ သမီး - မဆုလဲ့ရည်ထွန်း) နိုင်လွန်ကတ္တရာ လမ်းခင်းအလှူတော်ငွေ</td><td class="text-right">30,000</td></tr>
+                <tr><td class="text-center">10</td><td>မိခင်ကြီး ဒေါ်ကျင်လှိုင် ကွယ်လွန်ခြင်း (၆) နှစ်ပြည့်အားရည်စူး၍ ဦးလူထွန်း (3BYG0757) မိသားစု (ဈေးလမ်း သာယာဝတီမြို့နယ် သုံးဆယ်မြို့)</td><td class="text-right">10,000</td></tr>
+                <tr><td class="text-center">11</td><td>ဦးတိုင်းညွန့် + ဒေါ်မြင့်မြင့်စန်း မိသားစု</td><td class="text-right">10,000</td></tr>
+                <tr class="total-row">
+                    <td colspan="2" class="text-center">ဒုတိယအကြိမ် စုစုပေါင်း (၁၁ ဦး)</td>
+                    <td class="text-right">၁,၂၁၈,၀၀၀ ကျပ်</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <!-- Total Donation Summary Badge -->
-        <section class="bg-gradient-to-r from-amber-600 via-amber-700 to-amber-800 text-white rounded-2xl p-4 sm:p-5 text-center shadow-md border border-amber-500/40 transform transition hover:scale-[1.01]">
-            <span class="text-xs sm:text-sm font-medium tracking-wide text-amber-200 block uppercase mb-1">
-                စုစုပေါင်း လှူဒါန်းရရှိငွေ
-            </span>
-            <div id="totalAmount" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-wider">
-                ၂၀,၉၈၀,၀၀၀ ကျပ်
-            </div>
-        </section>
+    <div class="footer">
+        <p>🙏🙏🙏 သာဓု သာဓု သာဓု ခေါ်ဆိုပါ၏။ 🙏🙏🙏</p>
+    </div>
 
-        <!-- Donor List Main Section -->
-        <section class="bg-white rounded-2xl shadow-md border border-amber-200 overflow-hidden">
-            <div class="bg-amber-100/70 px-4 sm:px-6 py-3.5 border-b border-amber-200 flex justify-between items-center">
-                <h3 class="font-bold text-amber-900 text-xs sm:text-base flex items-center space-x-2">
-                    <span>📜</span>
-                    <span>လှူဒါန်းမှု စာရင်းများ</span>
-                </h3>
-                <span id="donorCountBadge" class="text-[10px] sm:text-xs font-semibold bg-amber-200/80 text-amber-900 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full">
-                    ၂၅ ဦး
-                </span>
-            </div>
+</div>
 
-            <!-- 1. Mobile View Cards (Beautiful & Optimized Mobile Layout) -->
-            <div class="block md:hidden p-3 space-y-3 bg-amber-50/30">
-                
-                <!-- Donor Card 1 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">မိဘများအား အမှူးထား၍</span>
-                        ကို Daniel Collins + မအင်ကြင်းလှမြင့် မိသားစု
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၇,၀၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 2 (Optimized for Multi-Name) -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ဒေါ်လင်းလင်းလှိုင် ၊ ဒေါ်လျိုစီမင်း(ခ)ဒေါ်ကိန်းလန် ၊ ဒေါ်ပေါက်လန် မိသားစုများ
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁,၀၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 3 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">ဒေါ်နီနီလွင် မိသားစု</div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 4 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ဦးဟုတ်စိန် + ဒေါ်အေးအေးခိုင်<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">သမီး မသိမ့်သဉ္ဇာစိုး၊ မစမ်းစန္ဒာစိုး မိသားစု (ဖြူးမြို့)</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 5 (Optimized for Title & Dedicated) -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">နှစ်ဖက်မိဘများရည်စူး၍</span>
-                        တရားလွှတ်တော်ရှေ့နေ ဦးသောင်းရွှေ + ဒေါ်အေးအေးသန်း မိသားစု
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 6 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">မိဘနှစ်ပါးအား အမှူးထား၍</span>
-                        ကိုဇော်လင်း + မအိအိလွင်<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">သား မောင်ကောင်းခန့်၊ သမီး မယွန်းရွှေရည်လင်း မိသားစု</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 7 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">ဒေါ်တင်တင်လှိုင် အမှူးထား၍</span>
-                        ဒေါ်ခင်မာဦး (ခင်မေဦး အထည်ဆိုင်)<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">ကြည့်မြင်တိုင်ညဈေး မိသားစု</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 8 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">ကိုလွှမ်းမိုးအောင် + မနော်မူး မိသားစု</div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 9 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">မိခင်ကြီး ဒေါ်ထွေး အမှူးထား၍</span>
-                        ဒေါ်မို့မို့ မိသားစု
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 10 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">ကွယ်လွန်သူ မိဘနှစ်ပါး အား ရည်စူး၍</span>
-                        မဧပရယ်ဌေး မိသားစု
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 11 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">ဒေါ်နုနုခိုင် မိသားစု</div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 12 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">ထူးလင်းယံ မိသားစု (စမ်းချောင်း)</div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 13 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ဦးဇာနည်ဝင်းထွန်း + ဒေါ်ကျော့ကျော့ခိုင်<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">သမီး မအိဇာနည်ဖြိုး၊ သား မောင်အားသစ်ဇာနည် မိသားစု (နေပြည်တော်)</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၃၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 14 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">ဒေါ်သီသီလှိုင် မိသားစု</div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 15 (Optimized Multi-Children Name) -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ကိုကျော်စွာ + မတင်တင်နွယ်<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">
-                            သား မောင်သီဟကျော်စွာ၊ မောင်ဆန်းထွဋ်ကျော်စွာ၊ မောင်အုပ်စိုးကမ္ဘာ မိသားစု (နေပြည်တော်)
-                        </span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 16 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ကိုစခိုင်မင်းဦး + မဖြူဖြူဝင်း<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">သမီး မဖြူဖြူခိုင်မင်း၊ သား မောင်လရောင်လင်း မိသားစု</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 17 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">မချောစုလှိုင် မိသားစု</div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၂၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 18 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">ကွယ်လွန်သူ မောင်သုတစံ အားရည်စူး၍</span>
-                        မကလျာဝင်း မိသားစု
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 19 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ( ဦးတင့်လွင် ) + ဒေါ်ဌေးဌေးဝင်း<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">သမီး မသဲစုလွင်၊ သား မောင်ထွန်းအောင်ကျော် မိသားစု</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 20 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">မိဘများအား အမှူးထား၍</span>
-                        ကိုသန်းဇော်ဦး + မမြင့်ကေခိုင်<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">သမီး မပွင့်ကြည်ဖြူ၊ သား မောင်ဟိန်းပြည့်နိုင် မိသားစု</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 21 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">ဒေါ်ဆွေဆွေမြင့် မိသားစု</div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 22 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ကိုအောင်မြတ်သူ + မအေးအေးမွန် မိသားစု <span class="text-gray-600 font-normal text-[11px]">(ရွှေဘိုမြို့)</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၃၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 23 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ကိုသန့်ဇော်လင်း + မဝေမာ<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">သား မောင်သက်ပိုင်လင်း၊ သမီး မစံယွန်းမေ မိသားစု</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၅၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 24 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        <span class="text-amber-700 font-semibold text-[11px] block mb-0.5">ဖခင်ကြီး ဦးတင်အေး အမှူးထား၍</span>
-                        သမီး မချို မိသားစု
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Donor Card 25 -->
-                <div class="bg-white p-3.5 rounded-xl border border-amber-200 shadow-sm flex flex-col space-y-2">
-                    <div class="font-bold text-gray-800 text-xs sm:text-sm leading-relaxed">
-                        ကိုထွန်းဝေ + မမေလွင်သော်<br>
-                        <span class="text-gray-600 font-normal text-[11px] block mt-0.5">ထွန်းပြည်လျှံ ဆောက်လုပ်ရေး ကုမ္ပဏီ မိသားစု</span>
-                    </div>
-                    <div class="flex justify-end">
-                        <span class="font-bold text-amber-900 text-xs sm:text-sm bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-200/80">
-                            ၁၀၀,၀၀၀ ကျပ်
-                        </span>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- 2. Desktop View Table (Visible on Laptop/Desktop Screens) -->
-            <div class="hidden md:block overflow-x-auto custom-scrollbar">
-                <table class="w-full text-left border-collapse min-w-full table-fixed">
-                    <thead>
-                        <tr class="bg-amber-50/50 text-amber-900 text-sm border-b border-amber-200/80 uppercase font-bold">
-                            <th class="p-4 border-r border-amber-200/50 w-7/12">အလှူရှင်အမည်</th>
-                            <th class="p-4 text-right w-5/12">လှူဒါန်းငွေ (ကျပ်)</th>
-                        </tr>
-                    </thead>
-                    <tbody id="donorTableBody" class="divide-y divide-amber-100 text-sm">
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">မိဘများအား အမှူးထား၍ <br>ကို Daniel Collins + မအင်ကြင်းလှမြင့် မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၇,၀၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဒေါ်လင်းလင်းလှိုင် ၊ ဒေါ်လျိုစီမင်း(ခ)ဒေါ်ကိန်းလန် ၊ ဒေါ်ပေါက်လန် မိသားစုများ</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁,၀၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဒေါ်နီနီလွင် မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဦးဟုတ်စိန် + ဒေါ်အေးအေးခိုင် <br>သမီး မသိမ့်သဉ္ဇာစိုး၊ မစမ်းစန္ဒာစိုး မိသားစု (ဖြူးမြို့)</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">နှစ်ဖက်မိဘများရည်စူး၍ <br>တရားလွှတ်တော်ရှေ့နေ ဦးသောင်းရွှေ + ဒေါ်အေးအေးသန်း မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">မိဘနှစ်ပါးအား အမှူးထား၍ <br>ကိုဇော်လင်း + မအိအိလွင် <br>သား မောင်ကောင်းခန့်၊ သမီး မယွန်းရွှေရည်လင်း မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဒေါ်တင်တင်လှိုင် အမှူးထား၍ ဒေါ်ခင်မာဦး <br>(ခင်မေဦး အထည်ဆိုင်) ကြည့်မြင်တိုင်ညဈေး မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ကိုလွှမ်းမိုးအောင် + မနော်မူး မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">မိခင်ကြီး ဒေါ်ထွေး အမှူးထား၍ <br>ဒေါ်မို့မို့ မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ကွယ်လွန်သူ မိဘနှစ်ပါး အား ရည်စူး၍ <br>မဧပရယ်ဌေး မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဒေါ်နုနုခိုင် မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ထူးလင်းယံ မိသားစု (စမ်းချောင်း)</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဦးဇာနည်ဝင်းထွန်း + ဒေါ်ကျော့ကျော့ခိုင် <br>သမီး မအိဇာနည်ဖြိုး၊ သား မောင်အားသစ်ဇာနည် မိသားစု (နေပြည်တော်)</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၃၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဒေါ်သီသီလှိုင် မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ကိုကျော်စွာ + မတင်တင်နွယ် <br>သား မောင်သီဟကျော်စွာ၊ မောင်ဆန်းထွဋ်ကျော်စွာ၊ မောင်အုပ်စိုးကမ္ဘာ မိသားစု (နေပြည်တော်)</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ကိုစခိုင်မင်းဦး + မဖြူဖြူဝင်း <br>သမီး မဖြူဖြူခိုင်မင်း၊ သား မောင်လရောင်လင်း မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">မချောစုလှိုင် မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၂၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ကွယ်လွန်သူ မောင်သုတစံ အားရည်စူး၍ <br>မကလျာဝင်း မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">( ဦးတင့်လွင် ) + ဒေါ်ဌေးဌေးဝင်း <br>သမီး မသဲစုလွင်၊ သား မောင်ထွန်းအောင်ကျော် မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">မိဘများအား အမှူးထား၍ <br>ကိုသန်းဇော်ဦး + မမြင့်ကေခိုင် <br>သမီး မပွင့်ကြည်ဖြူ၊ သား မောင်ဟိန်းပြည့်နိုင် မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဒေါ်ဆွေဆွေမြင့် မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ကိုအောင်မြတ်သူ + မအေးအေးမွန် မိသားစု (ရွှေဘိုမြို့)</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၃၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ကိုသန့်ဇော်လင်း + မဝေမာ <br>သမီး မစံယွန်းမေ၊ သား မောင်သက်ပိုင်လင်း မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၅၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-amber-50/20 hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ဖခင်ကြီး ဦးတင်အေး အမှူးထား၍ <br>သမီး မချို မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-amber-50/40">
-                            <td class="p-4 border-r border-amber-100 font-medium text-gray-800 leading-normal">ကိုထွန်းဝေ + မမေလွင်သော် <br>ထွန်းပြည်လျှံ ဆောက်လုပ်ရေး ကုမ္ပဏီ မိသားစု</td>
-                            <td class="p-4 text-right font-bold text-amber-900 align-top">၁၀၀,၀၀၀</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Blessing Text Section -->
-        <section class="bg-amber-50/40 rounded-2xl p-4 sm:p-8 text-center border border-amber-200/60 shadow-sm space-y-3 sm:space-y-4">
-            <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed max-w-2xl mx-auto">
-                ဤသို့ သဒ္ဓါထက်သန်စွာဖြင့် ပါဝင် လှူဒါန်းကြရသော အကျိုးအားကြောင့် 
-                အလှူရှင်နှင့်တကွ မိသားစုများသည် ကိုယ်ကျန်းမာ စိတ်ချမ်းသာ 
-                ဘေးအန္တရာယ် ကင်းရှင်းစွာဖြင့် 
-                ကောင်းမှုကုသိုလ် အမျိုးမျိုးကို ပြုလုပ် အားထုတ်နိုင်ကြပြီး 
-                သာသနာပြုချင်တိုင်း ပြုနိုင်စွမ်းရှိသော မိသားစုများ ဖြစ်နိုင်ကြပါစေ။
-            </p>
-            <div class="text-base sm:text-xl md:text-2xl font-bold text-amber-800 tracking-widest pt-1 sm:pt-2">
-                သာဓု ... သာဓု ... သာဓု
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-100 border-t border-amber-200/60 py-4 px-4 text-center text-[11px] sm:text-xs text-gray-600 mt-6">
-        <div class="max-w-4xl mx-auto space-y-1">
-            <p class="font-semibold text-amber-900">SNF YGN သာသနာပြုအဖွဲ့</p>
-            <p class="text-gray-500">© 2026 | သာသနာ့ပျိုးဥယျာဉ်ကျောင်း လျှပ်စစ်ယာဉ်ငယ် အလှူတော်မှတ်တမ်း</p>
-        </div>
-    </footer>
+<script>
+    function switchTab(evt, tabName) {
+        var i, tabContent, tabBtns;
+        tabContent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].classList.remove("active");
+        }
+        tabBtns = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tabBtns.length; i++) {
+            tabBtns[i].classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+</script>
 
 </body>
 </html>
